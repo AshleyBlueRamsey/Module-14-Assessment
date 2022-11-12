@@ -23,8 +23,9 @@ describe("partitionStudentsByScore", () => {
     });
 
     it("should return an array of two empty arrays if the student list is empty", () => {
+        const students = [];
         const expected = [[], []];
-        const actual = partitionStudentsByScore(undefined, 8.4);
+        const actual = partitionStudentsByScore(students, 6);
         expect(actual).to.eql(expected);
     });
     it("should put all students into first array if the scores are appropriate", () => {
