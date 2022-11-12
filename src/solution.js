@@ -8,6 +8,6 @@ function partitionStudentsByScore(students, score) {
   result.push(array1, array2);
   return result;
 
-}
+};
 
 module.exports = partitionStudentsByScore;
